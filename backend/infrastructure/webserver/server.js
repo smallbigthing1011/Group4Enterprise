@@ -21,7 +21,7 @@ const createServer = () => {
       createParentPath: true,
     })
   );
-  app.use(express.static(path.join(__dirname, "build")));
+  app.use(express.static("build"));
   app.use(cors());
   app.use(cookieParser());
   app.use(express.json());
